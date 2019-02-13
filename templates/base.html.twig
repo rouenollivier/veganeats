@@ -3,9 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link href="{{ asset('/webshome/css/main.css') }}" rel="stylesheet">
+        {% endblock %}
     </head>
     <body>
+
+    <div class="header">
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+        <p>test</p>
+    </div>
+
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
     </body>
